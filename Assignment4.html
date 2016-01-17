@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Private Functions Not Accessible</title>
+</head>
+	<script type="text/javascript">
+				function outerFunc(){
+			
+				  private function innerFunc(){
+					var name="Ravi"; 
+					return  name;
+				  }
+				  innerFunc();
+				  //alert("The name is"+innerFunc());
+				}
+
+		outerFunc();
+		alert(innerFunc());
+	</script>
+</html>

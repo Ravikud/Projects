@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Closure for Multiplication</title>
+</head>
+	<script type="text/javascript">
+		function outerFunc(){
+
+			var num1 = 10;
+		  
+		  function innerFunc(){
+			var num2=20; 
+			return num1 * num2;
+		  }
+		  alert("The multiplication of numbers are:"+innerFunc());
+		}
+
+		outerFunc();
+	
+	</script>
+</html>
